@@ -5,7 +5,7 @@ def task(pupil, tutor):
     seconds = 0
     for i in range(0, len(tutor), 2):
         for j in range(0, len(pupil), 2):
-            if start < pupil[j+1] or (tutor[i+1] > pupil[j] and start < pupil[j+1]):
+            if start < pupil[j+1]:
                 x = max(tutor[i], pupil[j])
                 y = min(tutor[i+1], pupil[j+1])
                 if x > y: continue
